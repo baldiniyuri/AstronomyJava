@@ -1,6 +1,7 @@
 package main.java.com.astronomy;
 
 import main.java.com.astronomy.calculations.AstronomyCalculations;
+import main.java.com.astronomy.calculations.DecayCalculations;
 
 import java.util.Scanner;
 
@@ -22,7 +23,9 @@ public class Main {
             case 1:
                 AstronomyCalculations.startAstronomyCalculations();
                 break;
-
+            case 2:
+                DecayCalculations.startDecayCalculations();
+                break;
             default:
                 System.out.println("Invalid program input.");
                 System.out.println("Terminating program.");
