@@ -3,6 +3,7 @@ package main.java.com.astronomy;
 import main.java.com.astronomy.calculations.AstronomyCalculations;
 import main.java.com.astronomy.calculations.DecayCalculations;
 import main.java.com.astronomy.calculations.LearningCalculations;
+import main.java.com.astronomy.calculations.StartDistanceCalculations;
 
 import java.util.Scanner;
 
@@ -14,6 +15,7 @@ public class Main {
         System.out.println("1 For Astronomical Calculations.");
         System.out.println("2 For Decay Calculations.");
         System.out.println("3 Learning Calculations.");
+        System.out.println("4 Star distance calculations.");
 
         Scanner scanner = new Scanner(System.in);
         int program = scanner.nextInt();
@@ -27,6 +29,9 @@ public class Main {
                 break;
             case 3:
                 LearningCalculations.startLearning();
+                break;
+            case 4:
+                StartDistanceCalculations.startStarDistanceCalculations();
                 break;
             default:
                 System.out.println("Invalid program input.");

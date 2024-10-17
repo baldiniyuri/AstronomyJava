@@ -18,12 +18,10 @@ public class LearningCalculations {
     }
 
     public double[] linearModel() {
-        double[] z = new double[w.length];
-        for (int i = 0; i < w.length; i++) {
-            for (int j = 0; j < x[0].length; j++) {
-                z[i] += w[i] * x[j][0];
-            }
-            z[i] += b[i];
+        double[] z = new double[x.length];
+        for (int i = 0; i < x.length; i++) {
+            z[i] = w[0] * x[i][0];
+            z[i] += b[0];
         }
         return z;
     }
